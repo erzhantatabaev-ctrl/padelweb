@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;500;700;800&family=Inter:wght@300;400;550;700&family=Tajawal:wght@400;700;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Base resets & glowing aesthetics */
+body {
+  background-color: #06110d; /* Soft dark-emerald background */
+  background-image: 
+    radial-gradient(circle at top left, rgba(163, 230, 53, 0.22) 0%, transparent 50%),
+    radial-gradient(circle at top right, rgba(6, 182, 212, 0.18) 0%, transparent 45%),
+    radial-gradient(circle at center right, rgba(244, 63, 94, 0.12) 0%, transparent 40%),
+    radial-gradient(circle at center left, rgba(16, 185, 129, 0.14) 0%, transparent 45%),
+    radial-gradient(circle at bottom right, rgba(236, 72, 153, 0.12) 0%, transparent 50%);
+  background-attachment: fixed;
+  color: #f4f4f5;
+  font-family: var(--font-sans);
+}
+
+/* Glass card overrides to make them warm, transparent, and colorful */
+.bg-zinc-950 {
+  background-color: rgba(9, 18, 14, 0.8) !important;
+  backdrop-filter: blur(16px);
+}
+.bg-zinc-900 {
+  background-color: rgba(18, 32, 25, 0.95) !important;
+  backdrop-filter: blur(16px);
+}
+.border-zinc-900 {
+  border-color: rgba(163, 230, 53, 0.15) !important;
+}
+.border-zinc-800 {
+  border-color: rgba(6, 182, 212, 0.2) !important;
+}
+
+/* Enhancing standard lime tags with vivid gradients and glowing properties */
+.text-lime-400 {
+  color: #bef264 !important; /* Slightly brighter lime green */
+  text-shadow: 0 0 12px rgba(190, 242, 100, 0.25);
+}
+
+.bg-lime-400 {
+  background-image: linear-gradient(135deg, #a3e635 0%, #059669 100%) !important;
+}
+
+.hover\:bg-lime-300:hover {
+  background-image: linear-gradient(135deg, #bef264 0%, #10b981 100%) !important;
+}
+
+/* Elegant custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(163, 230, 53, 0.2);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(163, 230, 53, 0.4);
+}
+
+/* Accent Glow and Gradient utilities */
+.shadow-glow {
+  box-shadow: 0 0 18px rgba(163, 230, 53, 0.5);
+}
+
+.bg-gradient-athletic {
+  background: linear-gradient(135deg, rgba(163, 230, 53, 0.15) 0%, rgba(6, 182, 212, 0.1) 100%);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #bef264 0%, #06b6d4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Arabic style overrides for high-performance reading and layout */
+.font-arabic-friendly {
+  font-family: "Tajawal", "Outfit", "Inter", sans-serif !important;
+}
+
+.font-arabic-friendly h1,
+.font-arabic-friendly h2,
+.font-arabic-friendly h3,
+.font-arabic-friendly h4,
+.font-arabic-friendly h5,
+.font-arabic-friendly button,
+.font-arabic-friendly span {
+  font-family: "Tajawal", "Outfit", sans-serif !important;
+  letter-spacing: 0px !important; /* Overrides technical wide-spacing */
+}
+
+.font-arabic-friendly p {
+  font-family: "Tajawal", "Inter", sans-serif !important;
+  letter-spacing: 0px !important;
+}
+
+

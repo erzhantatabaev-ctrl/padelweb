@@ -1,0 +1,6 @@
+{
+  "name": "Padel Court Reservation",
+  "description": "Premium online padel court booking & matchmaking platform with modern high-contrast athletic design, interactive scheduling grids, equipment rental boards, and user-friendly matching systems.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
